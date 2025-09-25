@@ -14,7 +14,7 @@
     <div class="movie-card">
       <div class="movie-poster">
         <img src="{{ movie.get_image_url() }}" alt="{{ movie.title }} poster">
-        <div class="ranking-badge">#{{ movie.ranking }}</div>
+        <div class="ranking-badge">#{{ loop.index }}</div>
       </div>
 
       <div class="movie-details">
